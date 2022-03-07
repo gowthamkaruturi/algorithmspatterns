@@ -17,9 +17,16 @@ func main() {
 	// fmt.Printf("max sum from the subarray %v is	%d \n", arr2, response)
 	// fmt.Println(slidingwindow.MinSumInSubArray([]int{3, 4, 1, 1, 6}, 8))
 
-	k := slidingwindow.LongestSlidingWindowKDistinct("araaci", 1)
+	// k := slidingwindow.LongestSlidingWindowKDistinct("araaci", 1)
+	// fmt.Print(k)
+	// fmt.Println()
+	// k = slidingwindow.LongestSlidingWindowKDistinct("cbbebi", 3)
+	// fmt.Print(k)
+	// fmt.Println()
+	// k = slidingwindow.MaxFruit([]rune("gowtham"))
+	// fmt.Println(k)
+	k := slidingwindow.NoRepeatSubstring("gowtham")
 	fmt.Println(k)
-	k = slidingwindow.LongestSlidingWindowKDistinct("cbbebi", 3)
+	k = slidingwindow.NoRepeatSubstring("kavyammmm")
 	fmt.Println(k)
-
 }

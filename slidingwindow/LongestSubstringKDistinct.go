@@ -1,10 +1,14 @@
 package slidingwindow
 
-import "github.com/gowthamkaruturi/algorithmspatterns/utils"
+import (
+	"fmt"
+
+	"github.com/gowthamkaruturi/algorithmspatterns/utils"
+)
 
 func LongestSlidingWindowKDistinct(str string, k int) int {
 
-	if len(str) <= 0 {
+	if len(str) == 0 {
 		return -1
 	}
 
@@ -26,6 +30,7 @@ func LongestSlidingWindowKDistinct(str string, k int) int {
 		maxLength = utils.GetMax(maxLength, windowEnd-windowStart+1)
 
 	}
+	fmt.Print(string(r[windowStart:len(r)]) + "-->")
 	return maxLength
 
 }
